@@ -34,4 +34,9 @@ describe('Input tests', () => {
 
     expect(props.onInputChange).toHaveBeenCalledWith(newValue);
   });
+  it('Input ma ustawiony type na text', () => {
+    const input = wrapper.getElement('input');
+
+    expect(input.props.type).toBe('text');
+  });
 });
